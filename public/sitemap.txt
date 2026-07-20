@@ -1,0 +1,9 @@
+https://example.com/
+https://example.com/#about
+https://example.com/#skills
+https://example.com/#experience
+https://example.com/#projects
+https://example.com/#certifications
+https://example.com/#education
+https://example.com/#achievements
+https://example.com/#contact

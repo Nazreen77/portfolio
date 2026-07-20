@@ -1,0 +1,29 @@
+categories:
+  - name: "Backend"
+    skills:
+      - name: "Java"
+        level: 95
+      - name: "Spring Boot"
+        level: 95
+      - name: "Microservices"
+        level: 92
+      - name: "REST API"
+        level: 95
+      - name: "Solr"
+        level: 90
+      - name: "Redis"
+        level: 90
+      - name: "Postman"
+        level: 92
+      - name: "Spring"
+        level: 92
+  - name: "Frontend"
+    skills:
+      - name: "JavaScript"
+        level: 92
+      - name: "React"
+        level: 90
+      - name: "HTML"
+        level: 95
+      - name: "CSS"
+        level: 92

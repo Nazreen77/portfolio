@@ -1,0 +1,49 @@
+items:
+  - title: "MedPlus Finance ERP"
+    description: "Enterprise finance management system for India's leading pharmaceutical retail chain, handling all financial operations beyond core pharmacy trade. Built the Partner module — a complete vendor lifecycle system covering partner master creation with multi-step approval workflows, division and group hierarchies, partner-specific process configurations, and TDS tax management with section-wise exemptions, backed by Solr-powered search and Redis caching for high-performance lookups. Also built the Non-Trade module — managing the full procurement-to-pay and sale-of-service flows for non-pharmaceutical assets, consumables, and intangible services. This includes product and service master data with approval workflows, fixed asset class management with dual depreciation calculations (Companies Act and Income Tax Act), product group hierarchies mapped to financial ledgers for automatic journal posting, purchase orders, goods receipt, payment invoices, credit and debit notes, and period-end financial closures. The system also supports Excel-based bulk operations, multi-tenant company structures, and role-based access control across all transactional workflows."
+    image: "/projects/finance-erp.jpg"
+    technologies: ["Java 8", "Spring Boot 2.5", "Spring Security", "CAS SSO", "MySQL", "Redis", "Apache Solr", "ActiveMQ", "Apache POI", "Thymeleaf", "Maven"]
+    category: "Full Stack"
+    liveUrl: ""
+    githubUrl: ""
+    featured: true
+  - title: "User Management System (UMS)"
+    description: "Centralized identity and access management platform for MedPlus handling the entire user lifecycle — from creation and role assignment to deactivation and access reviews. Automated HRMS sync eliminates manual onboarding, Segregation of Duties conflict detection prevents risky role combinations, and scheduled access reviews ensure SOC compliance. Bulk Excel operations, absconding user detection, and JWT-based token generation complete the system — replacing scattered Excel sheets and email-based approvals with a single, auditable platform."
+    image: "/projects/ums.jpg"
+    technologies: ["Java 8", "Spring MVC 5", "Spring Security", "MySQL", "Redis", "Apache Solr", "Apache POI", "JWT", "Thymeleaf"]
+    category: "Backend"
+    liveUrl: ""
+    githubUrl: ""
+    featured: true
+  - title: "Optical Warehouse"
+    description: "Centralized optical warehouse system for MedPlus managing prescription-based orders from creation to store dispatch — including lab replenishment, inventory assignment, PO/GRN generation, product catalog with Solr search, and warehouse-to-store mapping. Replaced manual order processing scattered across stores."
+    image: "/projects/optical-warehouse.jpg"
+    technologies: ["Java 8", "Spring Boot", "Spring Security", "MySQL", "Apache Solr", "RabbitMQ", "Apache POI"]
+    category: "Backend"
+    liveUrl: ""
+    githubUrl: ""
+    featured: true
+  - title: "MedPlus School of Learning (LMS)"
+    description: "Enterprise Learning Management System with course delivery, AI-proctored assessments, bulk question upload via Excel, multi-language translations, and real-time exam monitoring using MediaPipe face and eye detection."
+    image: "/projects/lms.jpg"
+    technologies: ["Java 21", "Spring Boot 3", "Spring Security", "React 19", "Redux Toolkit", "Vite", "MySQL", "Redis", "CAS SSO", "Apache POI", "SheetJS", "MediaPipe"]
+    category: "Full Stack"
+    liveUrl: ""
+    githubUrl: ""
+    featured: true
+  - title: "Medplus Lens"
+    description: "E-commerce eyewear platform with prescription-based product recommendations, lens customization engine, Solr-powered search, Paytm payment processing, and real-time order tracking."
+    image: "/projects/medpluslens.jpg"
+    technologies: ["Java 8", "Spring MVC 5", "Spring Security", "Apache Solr", "MySQL", "Redis Sentinel", "ActiveMQ", "MongoDB", "Paytm Payment Gateway", "Freemarker", "jQuery", "SASS"]
+    category: "Full Stack"
+    liveUrl: "https://www.medpluslens.com"
+    githubUrl: ""
+    featured: true
+  - title: "Insight Generator"
+    description: "AI-powered meeting intelligence platform built using Qwen AI prompts — users upload audio/video meetings and receive AI-generated summaries, action items, and key insights with PDF/DOCX export. Handles Whisper transcription, Ollama AI analysis, and role-based auth end-to-end."
+    image: "/projects/insight-generator.jpg"
+    technologies: ["Java 8", "Spring Boot", "Spring Security", "JWT", "PostgreSQL", "React 18", "TypeScript", "Material UI 6", "Vite", "Ollama", "Whisper", "FFmpeg", "Docker Compose", "iText", "docx4j"]
+    category: "Full Stack"
+    liveUrl: ""
+    githubUrl: ""
+    featured: true

@@ -1,0 +1,188 @@
+backend:
+  name: github
+  branch: main
+  commit_messages:
+    create: "Create {{collection}}: {{slug}}"
+    update: "Update {{collection}}: {{slug}}"
+    delete: "Delete {{collection}}: {{slug}}"
+    uploadMedia: "Upload {{filename}}"
+    deleteMedia: "Delete {{filename}}"
+
+local_backend: true
+
+media_folder: "public/images"
+public_folder: "/images"
+
+site_url: "https://example.com"
+display_url: "https://example.com"
+
+logo_url: "https://raw.githubusercontent.com/decaporg/decap-cms/main/logos/Decap_CMS-LogoDark.svg"
+
+publish_mode: "simple"
+
+editor:
+  preview: true
+
+collections:
+  - name: "settings"
+    label: "Settings"
+    files:
+      - label: "Profile"
+        name: "profile"
+        file: "content/settings.yaml"
+        fields:
+          - { label: "Name", name: "name", widget: string }
+          - { label: "Title", name: "title", widget: string }
+          - { label: "Tagline", name: "tagline", widget: string }
+          - { label: "Email", name: "email", widget: string }
+          - { label: "Phone", name: "phone", widget: string }
+          - { label: "Location", name: "location", widget: string }
+          - { label: "Avatar URL", name: "avatar", widget: string }
+          - { label: "Resume URL", name: "resume", widget: string }
+          - label: "Social Links"
+            name: "social"
+            widget: object
+            fields:
+              - { label: "GitHub", name: "github", widget: string }
+              - { label: "LinkedIn", name: "linkedin", widget: string }
+              - { label: "Twitter", name: "twitter", widget: string }
+              - { label: "Portfolio", name: "portfolio", widget: string }
+
+  - name: "about"
+    label: "About"
+    files:
+      - label: "About Me"
+        name: "about"
+        file: "content/about.yaml"
+        fields:
+          - { label: "Summary", name: "summary", widget: text }
+          - { label: "Bio", name: "bio", widget: text }
+          - label: "Stats"
+            name: "stats"
+            widget: list
+            fields:
+              - { label: "Label", name: "label", widget: string }
+              - { label: "Value", name: "value", widget: string }
+
+  - name: "skills"
+    label: "Skills"
+    files:
+      - label: "Skills"
+        name: "skills"
+        file: "content/skills.yaml"
+        fields:
+          - label: "Categories"
+            name: "categories"
+            widget: list
+            fields:
+              - { label: "Category Name", name: "name", widget: string }
+              - label: "Skills"
+                name: "skills"
+                widget: list
+                fields:
+                  - { label: "Skill Name", name: "name", widget: string }
+                  - { label: "Proficiency Level (0-100)", name: "level", widget: number, min_value: 0, max_value: 100 }
+
+  - name: "experience"
+    label: "Experience"
+    files:
+      - label: "Work Experience"
+        name: "experience"
+        file: "content/experience.yaml"
+        fields:
+          - label: "Experience Entries"
+            name: "items"
+            widget: list
+            fields:
+              - { label: "Company", name: "company", widget: string }
+              - { label: "Role", name: "role", widget: string }
+              - { label: "Period", name: "period", widget: string }
+              - { label: "Description", name: "description", widget: text }
+              - label: "Technologies"
+                name: "technologies"
+                widget: list
+
+  - name: "projects"
+    label: "Projects"
+    files:
+      - label: "Projects"
+        name: "projects"
+        file: "content/projects.yaml"
+        fields:
+          - label: "Projects"
+            name: "items"
+            widget: list
+            fields:
+              - { label: "Title", name: "title", widget: string }
+              - { label: "Description", name: "description", widget: text }
+              - { label: "Image URL", name: "image", widget: string }
+              - label: "Technologies"
+                name: "technologies"
+                widget: list
+              - label: "Category"
+                name: "category"
+                widget: select
+                options:
+                  - { label: "Full Stack", value: "Full Stack" }
+                  - { label: "Frontend", value: "Frontend" }
+                  - { label: "Backend", value: "Backend" }
+              - { label: "Live URL", name: "liveUrl", widget: string }
+              - { label: "GitHub URL", name: "githubUrl", widget: string }
+              - { label: "Featured", name: "featured", widget: boolean, default: false }
+
+  - name: "certifications"
+    label: "Certifications"
+    files:
+      - label: "Certifications"
+        name: "certifications"
+        file: "content/certifications.yaml"
+        fields:
+          - label: "Certifications"
+            name: "items"
+            widget: list
+            fields:
+              - { label: "Name", name: "name", widget: string }
+              - { label: "Issuer", name: "issuer", widget: string }
+              - { label: "Date", name: "date", widget: string }
+              - { label: "Credential ID", name: "credentialId", widget: string }
+              - { label: "URL", name: "url", widget: string }
+
+  - name: "education"
+    label: "Education"
+    files:
+      - label: "Education"
+        name: "education"
+        file: "content/education.yaml"
+        fields:
+          - label: "Education Entries"
+            name: "items"
+            widget: list
+            fields:
+              - { label: "Degree", name: "degree", widget: string }
+              - { label: "School", name: "school", widget: string }
+              - { label: "Period", name: "period", widget: string }
+              - { label: "GPA", name: "gpa", widget: string }
+              - { label: "Description", name: "description", widget: text }
+
+  - name: "achievements"
+    label: "Achievements"
+    files:
+      - label: "Achievements"
+        name: "achievements"
+        file: "content/achievements.yaml"
+        fields:
+          - label: "Achievements"
+            name: "items"
+            widget: list
+            fields:
+              - { label: "Title", name: "title", widget: string }
+              - { label: "Description", name: "description", widget: text }
+              - { label: "Date", name: "date", widget: string }
+              - label: "Icon"
+                name: "icon"
+                widget: select
+                options:
+                  - { label: "Award", value: "award" }
+                  - { label: "Trophy", value: "trophy" }
+                  - { label: "Book", value: "book" }
+                  - { label: "Microphone", value: "microphone" }

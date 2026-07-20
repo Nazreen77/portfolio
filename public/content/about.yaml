@@ -1,0 +1,15 @@
+summary: |
+  Passionate full-stack developer with 4+ years of experience building scalable web applications.
+  I specialize in Java, SpringBoot , and micro services architectures.
+bio: |
+  I'm a developer who loves turning complex problems into simple, beautiful solutions.
+  When I'm not coding, you'll find me contributing to open source or reading tech coders.
+stats:
+  - label: "Years Experience"
+    value: "4+"
+  - label: "Projects Completed"
+    value: "14+"
+  - label: "Happy Clients"
+    value: "10+"
+  - label: "Open Source Contributions"
+    value: "4+"

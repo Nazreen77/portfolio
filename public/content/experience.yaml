@@ -1,0 +1,12 @@
+items:
+  - company: "Optival Health Solutions"
+    role: "Full-Stack Developer"
+    period: "2022 - Present"
+    description: "Development of microservices architecture serving 1M+ users. Mentoring junior developers and driving technical decisions."
+    technologies: ["Java","SpringBoot","mysql","React", "Vite", "Redis", "PostgreSQL","Jenkins"]
+  - company: "Optival Health Solutions"
+    role: "Back end Developer"
+    period: "2022 - Present"
+    description: "Built the entire backend from scratch and implemented RESTful APIs. Reduced load time by 60% through performance optimization."
+    technologies: ["Java", "SpringBoot", "REST", "Mysql","Solr"]
+  
