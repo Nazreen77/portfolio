@@ -9,7 +9,7 @@ import { resolve } from 'node:path'
 // Change the base to '/your-repo-name/' when deploying to GitHub Pages
 // For Vercel/Netlify, keep as '/'
 export default defineConfig({
-  base: '/',
+  base: '/portfolio/',
   plugins: [
     react(),
     tailwindcss(),
