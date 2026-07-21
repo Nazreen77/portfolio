@@ -4,15 +4,16 @@ import { parse } from 'yaml'
 const ContentContext = createContext()
 
 async function loadContent() {
+  const base = import.meta.env.BASE_URL || '/'
   const files = {
-    settings: '/content/settings.yaml',
-    about: '/content/about.yaml',
-    skills: '/content/skills.yaml',
-    experience: '/content/experience.yaml',
-    projects: '/content/projects.yaml',
-    certifications: '/content/certifications.yaml',
-    education: '/content/education.yaml',
-    achievements: '/content/achievements.yaml',
+    settings: `${base}content/settings.yaml`,
+    about: `${base}content/about.yaml`,
+    skills: `${base}content/skills.yaml`,
+    experience: `${base}content/experience.yaml`,
+    projects: `${base}content/projects.yaml`,
+    certifications: `${base}content/certifications.yaml`,
+    education: `${base}content/education.yaml`,
+    achievements: `${base}content/achievements.yaml`,
   }
 
   const content = {}
